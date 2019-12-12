@@ -41,7 +41,7 @@ scale_colour_Publication <- function(...){
       discrete_scale("colour","Publication",manual_pal(values = rep(c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33", "#FFA500", "#3cb371", "#1E90FF"), 2)), ...)
 }
 
-plot_custom <- function(p, saveTo = NULL, palette = 'tableau20', base_size=10, legend.pos = "right", color = TRUE, fill = FALSE) {
+plot_custom <- function(p, saveTo = NULL, palette = 'Tableau 20', base_size=10, legend.pos = "right", color = TRUE, fill = FALSE) {
   out = p + theme_Publication(base_size, legend.pos)
   if(color) out = out + scale_colour_tableau(palette = palette)
   if(fill) out = out + scale_fill_tableau(palette = palette)
